@@ -14,11 +14,12 @@ namespace MJAirline
         private static int totalCoach;
         private bool firstclass;
         private bool coach;
-        private int AirCraftNumber;
-        private string Origin;
-        private string Destination;
         private DateTime departureTime;
         private DateTime arrivalTime;
+        public enum aircraftNumber { Bowing727 = 0001 }
+        public enum mileageBeforeMaintenance { Bowing727 = 76000 }
+        public enum flightRange { Bowing727 = 1700 }
+        public enum destinations { Tampa, Milwaukee }
 
         public bool[] Seat
         {
@@ -46,9 +47,40 @@ namespace MJAirline
             get { return totalCoach; }
             set { totalCoach = value; }
         }
+        public DateTime DepartureTime
+        {
+            get { return departureTime; }
+            set { departureTime = value; }
+        }
+        public DateTime ArrivalTime
+        {
+            get { return arrivalTime; }
+            set { arrivalTime = value; }
+        }
+        public destinations Destination
+        {
+            get;
+            set;
+        }
+        public aircraftNumber AircraftNumber
+        {
+            get;
+            set;
+        }
+        public flightRange FlightRange
+        {
+            get;
+            set;
+        }
+        public mileageBeforeMaintenance MileageBeforeMaintenance
+        {
+            get;
+            set;
+        }
+
     }
 }
 
 
 
-  
+
