@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MJAirline
 {
-    public class radioConfirm
+    class radioConfirm
     {
-        public radioConfirm()
-        {
-
-        }
+        
     }
 }

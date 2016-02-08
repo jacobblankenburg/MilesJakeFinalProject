@@ -23,6 +23,7 @@ namespace MJAirline
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void buttonCreat_Click(object sender, RoutedEventArgs e)
@@ -40,7 +41,15 @@ namespace MJAirline
 
                 filewritter1 filewriter = new filewritter1();
 
-                string PassengerInfo = (Environment.NewLine + this.textBoxData1.Text + " is leaving on " + this.DatePicker1 + " and the flight Origin and Destination is " + this.radioMke.ToString() + this.radioTpa);
+                string PassengerInfo = null;
+                if (radioMke.IsChecked == true)
+                {
+                     PassengerInfo = (Environment.NewLine + this.textBoxData1.Text + " is leaving on " + this.DatePicker1 + " and the flight Origin and Destination is " + this.radioMke.Content);
+                }
+                else if(radioTpa.IsChecked == true)
+                {
+                    PassengerInfo = (Environment.NewLine + textBoxData1.Text + " is leaving on " + this.DatePicker1 + " and the flight Origin and Destination is " + this.radioTpa.Content);
+                }
                 filewriter.Print(PassengerInfo, "Manifest.txt");
                 //this.Close();
                 MessageBox.Show(PassengerInfo);
