@@ -57,9 +57,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CoachConfirm.xaml.cs">
+      <DependentUpon>CoachConfirm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="filereader1.cs" />
+    <Compile Include="filewritter1.cs" />
+    <Compile Include="FirstConfirm3.xaml.cs">
+      <DependentUpon>FirstConfirm3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="radioConfirm.cs" />
     <Compile Include="SeatConfirm.xaml.cs">
       <DependentUpon>SeatConfirm.xaml</DependentUpon>
     </Compile>
+    <Page Include="CoachConfirm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FirstConfirm3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -15,9 +15,9 @@ using System.Windows.Shapes;
 
 namespace MJAirline
 {
-    public partial class Flight : Page
+    public partial class Flight1 : Page
     {
-        public Flight()
+        public Flight1()
         {
             InitializeComponent();
         }

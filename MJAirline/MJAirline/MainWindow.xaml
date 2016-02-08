@@ -9,17 +9,14 @@
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="Enter Name" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxData1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="120" Margin="85,20,0,0"/>
-        <Button x:Name="buttonCreat" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="395,137,0,0" Click="buttonCreat_Click"/>
+        <Button x:Name="buttonCreat" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="238,160,0,0" Click="buttonCreat_Click"/>
         <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Margin="405,313,0,-0.2" VerticalAlignment="Top"/>
         <DatePicker x:Name="DatePicker1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,60,0,0" Width="120"/>
-        <TextBlock x:Name="Class" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select Class" VerticalAlignment="Top" Margin="260,101,0,0" Height="15" Width="95"/>
 
-        <Button x:Name="FightPicker" Content="Seat Picker" HorizontalAlignment="Left" Margin="395,245,0,0" VerticalAlignment="Top" Width="75" Click="FightPicker_Click"/>
+        <Button x:Name="FightPicker" Content="Seat Picker" HorizontalAlignment="Left" Margin="342,160,0,0" VerticalAlignment="Top" Width="75" Click="FightPicker_Click"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="92,101,0,0" TextWrapping="Wrap" Text="Select Flight" VerticalAlignment="Top" Width="68"/>
-        <CheckBox x:Name="Milwaukee" Content="MKE to TPA" HorizontalAlignment="Left" Margin="92,128,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Tampa" Content="TPA to MKE" HorizontalAlignment="Left" Margin="92,152,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="First" Content="FirstClass" HorizontalAlignment="Left" Margin="260,131,0,0" VerticalAlignment="Top" Background="White"/>
-        <CheckBox x:Name="Coach" Content="Coach" HorizontalAlignment="Left" Margin="260,152,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioMke" Content="MKE to TPA" HorizontalAlignment="Left" Margin="85,145,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioTpa" Content="TPA to MKE" HorizontalAlignment="Left" Margin="85,165,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

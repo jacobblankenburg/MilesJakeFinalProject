@@ -34,9 +34,16 @@ namespace MJAirline
 
                 DatePicker date = new DatePicker();
                 date.SelectedDate = DatePicker1.SelectedDate;
-                date.DisplayDateStart = new DateTime(2 / 4 / 16);
-                date.DisplayDateEnd = new DateTime(2 / 29 / 16);
+                date.DisplayDateStart = new DateTime(2 / 8 / 16);
+                date.DisplayDateEnd = new DateTime(2 / 29 / 19);
                 date.IsTodayHighlighted = true;
+
+                filewritter1 filewriter = new filewritter1();
+
+                string PassengerInfo = (Environment.NewLine + this.textBoxData1.Text + " is leaving on " + this.DatePicker1 + " and the flight Origin and Destination is " + this.radioMke.ToString() + this.radioTpa);
+                filewriter.Print(PassengerInfo, "Manifest.txt");
+                //this.Close();
+                MessageBox.Show(PassengerInfo);
 
 
             }
@@ -48,7 +55,7 @@ namespace MJAirline
 
         private void FightPicker_Click(object sender, RoutedEventArgs e)
         {
-            Flight flight = new Flight();
+            Flight1 flight = new Flight1();
             Content = flight;
         }
     }
